@@ -10,6 +10,6 @@
 	 (AmSTeX-mode . eglot-ensure))
   :config (with-eval-after-load 'eglot (dolist (mode-server '((plain-TeX-mode . ("digestif"))
 			                                      (LaTeX-mode . ("texlab"))))
-                                               (add-to-list 'eglot-server-programs mode-server))))
+                                         (add-to-list 'eglot-server-programs mode-server))))
 
 (provide 'lsp)

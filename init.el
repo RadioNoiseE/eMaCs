@@ -15,8 +15,9 @@
 (require 'package)
 ;(require 'roll)
 
-(require 'preferences)
 (require 'font)
+(require 'preferences)
+
 (require 'theme)
 (require 'modeline)
 
