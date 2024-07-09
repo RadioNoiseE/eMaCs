@@ -18,6 +18,7 @@
 (require 'preferences)
 (require 'font)
 (require 'theme)
+(require 'modeline)
 
 (require 'highlight)
 (require 'vilayer)
