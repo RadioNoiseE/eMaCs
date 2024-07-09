@@ -32,8 +32,8 @@
 				  (add-to-list 'org-latex-classes cjk-classes)))
 
 (setq org-emphasis-regexp-components
-      (list (concat " \t('\"{"            "[:nonascii:]")
-            (concat "- \t.,:!?;'\")}\\["  "[:nonascii:]")
+      (list (concat " \t('\"{" "[:nonascii:]")
+            (concat "- \t.,:!?;'\")}\\[" "[:nonascii:]")
             " \t\r\n,\"'"
             "."
             1))
