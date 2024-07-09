@@ -39,7 +39,6 @@
 			 (propertize ":" 'face 'font-lock-warning-face)
 			 (propertize "%I" 'face 'font-lock-string-face)
 			 "] "
-			 mode-line-end-spaces)))
-	       ))
+			 mode-line-end-spaces)))))
 
 (provide 'modeline)
