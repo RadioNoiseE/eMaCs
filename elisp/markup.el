@@ -5,6 +5,10 @@
   :defer t
   :hook (org-mode . org-bullets-mode))
 
+(use-package htmlize
+  :ensure t
+  :defer t)
+
 (use-package tex
   :ensure auctex
   :defer t

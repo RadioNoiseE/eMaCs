@@ -87,4 +87,8 @@
          "\\|"
          "\\(?:\\*\\|[+-]?[[:alnum:].,\\]*[[:alnum:]]\\)\\)")))
 
+(defun zero-width-space ()
+  (interactive)
+  (insert-char ?\u200B))
+
 (provide 'cjk)
