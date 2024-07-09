@@ -1,9 +1,9 @@
-;; modeline 
+;; modeline
 
 (setq mode-line-position
       (list
-       "(" (propertize "%l" 'face 'font-lock-type-face)
-       "," (propertize "%c" 'face 'font-lock-type-face) ")"))
+       "  (" (propertize "%l" 'face 'font-lock-type-face)
+       "," (propertize "%c" 'face 'font-lock-type-face) ")   "))
 
 (defun mode-line-fill (reserve)
   (when
@@ -29,13 +29,13 @@
 				   'face 'font-lock-warning-face))
 	       '(:eval (propertize "  %F"
 				   'face 'font-lock-keyword-face))
-	       mode-line-frame-identification
-	       mode-line-buffer-identification
+	       '(:eval (propertize "  %b"
+				   'face 'font-lock-escape-face))
 	       mode-line-position
                '(:eval (mode-line-flush-right
 			(format-mode-line (list
 					   mode-line-modes
-					   " [" (propertize "%p" 'face 'font-lock-comment-face) "/%I] "
+					   " [" (propertize "%p" 'face 'font-lock-comment-face) "/" (propertize "%I" 'face 'font-lock-warning-face) "] "
 					   mode-line-end-spaces))))
 	       ))
 
