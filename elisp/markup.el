@@ -5,6 +5,12 @@
   :defer t
   :hook (org-mode . org-bullets-mode))
 
+(use-package table
+  :ensure t
+  :defer t)
+
+(setq org-startup-align-all-tables 'align)
+
 (use-package htmlize
   :ensure t
   :defer t)

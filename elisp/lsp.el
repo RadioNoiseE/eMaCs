@@ -6,9 +6,10 @@
   :hook ((c-mode . eglot-ensure)
 	 (c++-mode . eglot-ensure)
 	 (plain-TeX-mode . eglot-ensure)
-	 (LaTeX-mode . eglot-ensure)
-	 (AmSTeX-mode . eglot-ensure))
+	 (AmSTeX-mode . eglot-ensure)
+	 (LaTeX-mode . eglot-ensure))
   :config (with-eval-after-load 'eglot (dolist (mode-server '((plain-TeX-mode . ("digestif"))
+							      (AmSTeX-mode . ("digestif"))
 			                                      (LaTeX-mode . ("texlab"))))
                                          (add-to-list 'eglot-server-programs mode-server))))
 

@@ -1,0 +1,47 @@
+* Emacs Minimal Configuration
+
+#+BEGIN_CENTER
+A lightweight and very extensible Emacs configuration with small footprint and CJK support.
+#+END_CENTER
+
+** Packages used
+
+| packages              | functionality                         | optional (Y/N)                                    |
+|-----------------------+---------------------------------------+---------------------------------------------------|
+| ~evil~                | VI-layer                              | Y                                                 |
+| ~ivy~                 | list selection                        | Y                                                 |
+| ~eglot~               | lsp support                           | Y, used by ~company-mode~ as an completion source |
+| ~company-mode~        | auto-completion                       | Y                                                 |
+| ~treesitter~          | highlight                             | Y, used by ~htmlize~ for fontify                  |
+| ~treesitter-lang~     | language specific                     | Y, used by ~treesitter~                           |
+| ~which-key~           | hot-key reminder                      | Y                                                 |
+| ~org-bullets~         | better markup element in org mode     | Y                                                 |
+| ~htmlize~             | fontify support to org-export-to-html | Y                                                 |
+| ~auctex~              | TeX enhancements                      | Y                                                 |
+| ~pdf-mode~            | PDF preview support                   | Y                                                 |
+| ~fcitx~               | IM intregration                       | Y                                                 |
+| ~valign~              | org tables prettify                   | Y                                                 |
+| ~table~               | text-based tables                     | Y                                                 |
+| ~spacemacs-theme~     | theme                                 | Y                                                 |
+| ~auto-package-update~ | rolling package update experience     | Y                                                 |
+| ~use-package~         | package configuration                 | N                                                 |
+
+** External Dependencies
+
+| dependencies | relied by             | optional                                    |
+| ~clangd~     | c/cpp-mode            | Y                                           |
+| ~texlab~     | LaTeX-mode            | Y                                           |
+| ~digestif~   | AmSTeX/plain-TeX-mode | Y                                           |
+| ~fcitx~      | fcitx-package         | Y, required to remove the fcitx-use-package |
+
+** Features
+
+*** TeXnician
+
+1) Smart LSP support: ~texlab~ for LaTeX and ~digestif~ for AmSTeX/plainTeX.
+2) Treesitter based highlight for LaTeX2e/AmSTeX/plainTeX; font-lock based highlighting support for LaTeX3.
+
+*** CJK
+
+1) Table visual align for mixed CJK and latin characters.
+2) Correct org element highlight and export support for CJK, without the need for space/zero-width-spaces.
