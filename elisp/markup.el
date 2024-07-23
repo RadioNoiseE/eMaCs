@@ -38,4 +38,7 @@
 					  "\\)")
 				 1 'font-lock-variable-name-face))))))
 
+(setq TeX-view-program-selection '((output-pdf "PDF Tools"))
+      TeX-view-program-list '(("PDF Tools" TeX-pdf-tools-sync-view)))
+
 (provide 'markup)

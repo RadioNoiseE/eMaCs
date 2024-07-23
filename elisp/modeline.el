@@ -13,8 +13,8 @@
 	      `((space :align-to (- (+ right right-fringe right-margin) ,reserve)))))
 
 (defun mode-line-flush-right (right-line)
-  (let ((charnum (length (format-mode-line right-line))))
-    (list (mode-line-fill charnum) right-line)))
+  (let ((right-length (length (format-mode-line right-line))))
+    (list (mode-line-fill right-length) right-line)))
 
 (defun truncate-mode-line-construct (construct length)
   (let* ((full-string (format-mode-line construct))
