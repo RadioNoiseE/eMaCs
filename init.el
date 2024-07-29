@@ -14,13 +14,14 @@
 	    (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
 
 (require 'melpa)
-(require 'package)
+(require 'pkg)
 
 (require 'font)
 (require 'preferences)
 
 (require 'theme)
 (require 'modeline)
+(require 'pview)
 
 (require 'highlight)
 (require 'vilayer)
@@ -36,6 +37,8 @@
 (require 'pdf)
 (require 'markup)
 (require 'teco)
+
+(require 'mutt)
 
 (provide 'init)
 
