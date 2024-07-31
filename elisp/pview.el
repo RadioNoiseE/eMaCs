@@ -4,8 +4,8 @@
   :ensure t
   :defer t
   :init
-  (setq minimap-width-fraction 0.10
-        minimap-minimum-width 16
+  (setq minimap-width-fraction 0.15
+        minimap-minimum-width 20
         minimap-window-location 'right)
   (defun minimap--customize nil
     (with-current-buffer minimap-buffer-name

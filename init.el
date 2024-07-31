@@ -29,6 +29,7 @@
 (require 'keyrem)
 
 (require 'lsp)
+(require 'docu)
 (require 'autocomplete)
 (require 'git)
 
